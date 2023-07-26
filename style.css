@@ -1,84 +1,87 @@
-
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
+  }
+  
+  body {
     font-family: 'Times New Roman', Times, serif;
     background: #424141;
-}
-
-p {
+  }
+  
+  p {
     color: #fff;
-
-}
-
-main {
+  }
+  
+  main {
     margin-top: 2rem;
-}
-
-h3 {
+  }
+  
+  h3 {
     font-size: 1.5rem;
-}
-
-img {
+  }
+  
+  img {
     width: 100%;
-}
-
-.container {
+  }
+  
+  /* Layout */
+  .container {
     max-width: 1400px;
     margin: 0 auto;
     position: relative;
     display: grid;
     gap: 2rem;
     grid-template-columns: 3fr 1fr;
-}
-
-.styles-text {
-
+  }
+  
+  /* Typography */
+  .styles-text {
     color: #602ef6;
     font-size: 4rem;
-}
-
-
-.sidebar h2 {
+  }
+  
+  /* Sidebar */
+  .sidebar h2 {
     border-bottom: 2px dotted rgb(255, 255, 255);
     padding-bottom: 1rem;
     margin-bottom: 1rem;
-}
-
-.text-center {
+  }
+  
+  .text-center {
     text-align: center;
-}
-
-.hero-area {
+  }
+  
+  /* Hero Area */
+  .hero-area {
     background-color: #000000;
     padding: 6rem;
     background-position: left bottom, right bottom;
     background-repeat: no-repeat, no-repeat;
-}
-
-.card {
+  }
+  
+  /* Cards */
+  .card {
     background-color: #0D0D0D;
     border: 1px solid #434343;
-}
-
-.information {
+  }
+  
+  .information {
     padding: 0.8rem;
     text-align: center;
-}
-
-.player-cards-list {
+  }
+  
+  /* Player Cards List */
+  .player-cards-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     color: #fff;
-}
-
-
-.btn-calculate,
-.select-button {
+  }
+  
+  /* Buttons */
+  .btn-calculate,
+  .select-button {
     margin-top: 1rem;
     background-color: #015196;
     width: 100%;
@@ -87,51 +90,51 @@ img {
     font-weight: 600;
     cursor: pointer;
     border: none;
-}
-
-
-
-
-.budget,
-.selected-list {
+  }
+  
+  /* Budget and Selected List */
+  .budget,
+  .selected-list {
     background-color: #0D0D0D;
     color: #fff;
     padding: 1rem;
     margin-bottom: 2rem;
-}
-
-ol {
+  }
+  
+  ol {
     padding: 0 1rem;
-}
-
-ol li {
-    padding-top: 1rem
-}
-
-.budget-flex {
+  }
+  
+  ol li {
+    padding-top: 1rem;
+  }
+  
+  .budget-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: .5rem;
     padding-top: .5rem;
-}
-
-.budget-flex input {
+  }
+  
+  .budget-flex input {
     padding: .7rem;
     background: #0D0D0D;
     border: 1px solid #fff;
     color: #fff;
     width: 50%;
-}
-
-footer {
+  }
+  
+  /* Footer */
+  footer {
     padding: 2rem;
     margin-top: 2rem;
     background-color: #0D0D0D;
-}
-
-.disabled-btn {
+  }
+  
+  /* Disabled Button */
+  .disabled-btn {
     background-color: #A2A9AF;
     border: none;
-}
-
+  }
+  
