@@ -1,11 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best five</title>
+    <title>Select players</title>
+    <link rel="stylesheet" href="./style.css">
+
 </head>
+
 <body>
-    <h1>Best five</h1>
+    <header>
+        <section class="hero-area">
+            <div class=" text-center">
+                <h1 class="styles-text">Team Building</h1>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. nam sequi quam iure aspernatur vero atque.<br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, iusto.
+                </p>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="container">
+            
+                <div class="player-cards-list" id="player-cards-list">
+                    <div class="card">
+                        <img src="./images/player_pic.png" alt="">
+                        <div class="information">
+                            <h3>Rahim</h3>
+                            
+                            <button class="select-button">SELECT</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/player_pic.png" alt="">
+                        <div class="information">
+                            <h3>Korim</h3>
+                            <button class="select-button">SELECT</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/player_pic.png" alt="">
+                        <div class="information">
+                            <h3>Jobbar</h3>
+                            <button class="select-button">SELECT</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/player_pic.png" alt="">
+                        <div class="information">
+                            <h3>Mohon</h3>
+                            
+                            <button class="select-button">SELECT</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/player_pic.png" alt="">
+                        <div class="information">
+                            <h3>Adom</h3>
+                            
+                            <button class="select-button">SELECT</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/player_pic.png" alt="">
+                        <div class="information">
+                            <h3>Mukhlesh</h3>
+                        
+                            <button class="select-button">SELECT</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="sidebar">
+                    <div class="selected-list">
+                        <h2 class="text-center">Selected Player </h2>
+                        <ol id="selected-player-list">
+                        </ol>
+                    </div>
+                    <div class="budget">
+                        <h2 class="text-center">BUDGET</h2>
+                        <div class="budget-flex">
+                            <label for="per-player">Per Player</label>
+                            <input type="number" id="per-player-cost" placeholder="0000" name="per-player">
+                        </div>
+                        <button id="player-cost" class="btn-calculate">Calculate</button>
+
+                        <div class="budget-flex">
+                            <span>Player Expenses</span><span>$ <span id="player-expenses">0000</span></span>
+                        </div>
+                        <div class="budget-flex">
+                            <label for="Manager">Manager </label>
+                            <input id="manager-cost" type="number" placeholder="0000" name="Manager">
+                        </div>
+                        <div class="budget-flex">
+                            <label for="Coach">Coach</label>
+                            <input id="coach-cost" type="number" placeholder="0000" name="Coach">
+                        </div>
+                        <button class="btn-calculate" id="calc-total-btn">Calculate Total</button>
+                        <div class="budget-flex"><span>Total</span><span class="red">$<span
+                                    id="total">0000</span></span>
+                        </div>
+                    </div>
+                </div>
+    
+        </section>
+    </main>
+    <footer>
+        <p class="text-center">Copyright @ All Rights Reserved.</p>
+    </footer>
+    <script src="js/calculation.js"></script>
 </body>
+
 </html>
